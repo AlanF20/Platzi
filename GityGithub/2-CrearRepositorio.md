@@ -33,3 +33,36 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
+6- Aun nada se añadido porque si queremos agregar un archivo a nuestro repositorio tenemos que ejecutar el comando `git add` 
+```s
+alanf@alanf:~/Alan/proyecto1$ git add miTexto.txt 
+```
+7- Con el comando git status podremos ver la lista de cambios que se añadiran a nuestro repositorio.
+```s
+alanf@alanf:~/Alan/proyecto1$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   miTexto.txt
+```
+8- Si por algun motivo nosotros no queremos añadir algun archivo a nuestro repositorio pero ya ejecutamos el `git add` solo tenemos que ejecutar el comando `git rm <archivo>`
+```s
+alanf@alanf:~/Alan/proyecto1$ git rm --cached miTexto.txt 
+rm 'miTexto.txt'
+```
+9- Para comprobar que efectivamente quitamos el archivo ejecutamos nuevamente `git status`.
+```s
+alanf@alanf:~/Alan/proyecto1$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	miTexto.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+```

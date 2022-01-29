@@ -48,11 +48,13 @@ Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 	new file:   miTexto.txt
 ```
-8- Si por algun motivo nosotros no queremos añadir algun archivo a nuestro repositorio pero ya ejecutamos el `git add` solo tenemos que ejecutar el comando `git rm <archivo>`
+8- Si por algun motivo nosotros no queremos añadir algun archivo a nuestro repositorio pero ya ejecutamos el `git add` solo tenemos que ejecutar el comando `git rm --cached <archivo>`
 ```s
 alanf@alanf:~/Alan/proyecto1$ git rm --cached miTexto.txt 
 rm 'miTexto.txt'
 ```
+> El **cached** en nuestro comando es una instruccion en donde le decimos a github que remueva el archivo deseado desde el cache almacenado en nuestro repositorio.
+
 9- Para comprobar que efectivamente quitamos el archivo ejecutamos nuevamente `git status`.
 ```s
 alanf@alanf:~/Alan/proyecto1$ git status
@@ -65,4 +67,8 @@ Untracked files:
 	miTexto.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
+```
+10- Una vez estamos seguros de lo que subiremos a nuestro repositorio, tenemos que agregar un mensaje de confirmacion de lo que agregaremos a nuestro repositorio, esto lo hacemos mediante el comando `git commit` 
+```s
+alanf@alanf:~/Alan/proyecto1$ git commit -m "Agregamos el archivo miTexto.txt al repositorio"
 ```

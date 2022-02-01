@@ -53,7 +53,9 @@ Changes to be committed:
 alanf@alanf:~/Alan/proyecto1$ git rm --cached miTexto.txt 
 rm 'miTexto.txt'
 ```
-> El **cached** en nuestro comando es una instruccion en donde le decimos a github que remueva el archivo deseado desde el cache almacenado en nuestro repositorio.
+> El **--cached** en nuestro comando es una instruccion en donde le decimos a github que remueva el archivo deseado desde el cache almacenado en nuestro repositorio.
+
+>A su vez **cached** quiere decir que aun no esta el archivo en las bases de datos de github si no en la memoria RAM de nuestro dispositivo.
 
 9- Para comprobar que efectivamente quitamos el archivo ejecutamos nuevamente `git status`.
 ```s
@@ -68,7 +70,17 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-10- Una vez estamos seguros de lo que subiremos a nuestro repositorio, tenemos que agregar un mensaje de confirmacion de lo que agregaremos a nuestro repositorio, esto lo hacemos mediante el comando `git commit` 
+10- Una vez estamos seguros de lo que subiremos a nuestro repositorio, tenemos que agregar un mensaje de confirmacion de lo que agregaremos, esto lo hacemos mediante el comando `git commit` 
 ```s
 alanf@alanf:~/Alan/proyecto1$ git commit -m "Agregamos el archivo miTexto.txt al repositorio"
 ```
+> Una mala practica seria no asignar un mensaje acerca de lo que se esta enviando al repositorio, porque de esta manera si nosotros queremos saber el estado del repositorio en un tiempo (pasado) especifico, sabremos que acciones se tomaron en dicho tiempo.
+
+11- Posiblemente en este paso nuestra terminal nos arrojaria un error acerca de que no puede identificar quienes somos nosotros, de ser asi tenemos que configurar las variables de **user.name** y **user.email** que vienen en la configuracion global de github , pero, Y como hacemos eso? bueno:
+
+```s
+alanf@alanf:~$ git config --global user.name "Aqui va nuestro user"
+
+alanf@alanf:~$ git config --global user.email "Aqui va nuestro email"
+```
+

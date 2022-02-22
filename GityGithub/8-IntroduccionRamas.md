@@ -56,4 +56,4 @@ Merge made by the 'recursive' strategy.
 
 Ejecutamos el comando ***git merge*** y como podemos observar se fusiona nuestra rama cabecera con la rama *master*.
 
-![mergeWorkFlow](./GityGithub/sources/mergeWorkFlow.png)
+![mergeWorkFlow](./sources/mergeWorkFlow.png)

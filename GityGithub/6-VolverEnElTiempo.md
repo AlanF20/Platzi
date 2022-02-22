@@ -45,3 +45,27 @@ HEAD is now at 3d96c76 este es un commit para agregar a github
 ```
 
 Este comando debe usarse con precaucion debido a que elimina la version con la cual estabas trabajando para poder regresar a una version previa.
+
+Con el comando `git log --stat` podremos ver los cambios especificos a partir del commit.
+
+```s
+alanf@alanf:~/Alan/proyecto1$ git log --stat
+commit 994cb71244369ea46779fb15d86f6a5a9a747dcb (HEAD -> master)
+Author: Alan Flores <alanif@hotmail.com>
+Date:   Tue Feb 22 07:19:29 2022 -0600
+
+    proyecto real
+
+ post.html | 10 ++++++++++
+ style.css |  4 ++++
+ 2 files changed, 14 insertions(+)
+
+commit 3d96c76de2532ed97bddfda4ca8693dca7f58bf1
+Author: Alan Flores <alanif@hotmail.com>
+Date:   Mon Feb 14 16:55:31 2022 -0600
+
+    este es un commit para agregar a github
+
+ miTexto.txt | 1 +
+ 1 file changed, 1 insertion(+)
+```

@@ -61,3 +61,6 @@ To github.com:AlanF20/BlogDePruebaPlatzi.git
 ```
 
 ![branch](../GityGithub/sources/branchs.png)
+
+> Una buena practica de trabajo es trabajar en ramas distintas a ***main*** y solo subir los cambios que estamos seguros que estan listos para subir a produccion.
+

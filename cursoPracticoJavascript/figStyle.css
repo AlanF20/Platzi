@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.carga{
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spiner 1s linear infinite;
+}
+
+@keyframes spiner {
+    to{
+        transform: rotate(0deg);
+    }from{
+        transform: rotate(360deg);
+    }
+}
+.carga span{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    border-radius: 50%;
+    position:initial;
+}

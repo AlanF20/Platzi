@@ -3,33 +3,45 @@
     padding: 0;
     margin: 0;
 }
-
-.carga{
-    width: 50px;
-    height: 50px;
-    border: 4px solid rgb(0, 0, 0, 0.1);
-    border-radius: 50%;
-    border-top-color: black;
+html{
+    font-size: 62.5%;
+}
+.header{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: spiner 1s linear infinite;
+}
+.header__nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-@keyframes spiner {
-    to{
-        transform: rotate(0deg);
-    }from{
-        transform: rotate(360deg);
-    }
-}
-.carga span{
-    width: 30px;
-    height: 30px;
+.header__nav-logo{
+    width: 70%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cadetblue;
-    border-radius: 50%;
-    position:initial;
+    font-family: Kanit;
+    flex-direction: column;
+    font-size: 2.4rem; 
+    margin-top: 10px;
+    padding: 20px;
+}
+.header__nav-logo p{
+    width: 100px;
+    text-align: left;
+}
+.header__nav-logo p span{
+    font-size: 2rem;
+}
+
+.header__nav-ul{
+    width: 30%;
+    font-size: 2.4rem;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }

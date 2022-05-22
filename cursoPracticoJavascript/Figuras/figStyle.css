@@ -6,11 +6,23 @@
 html{
     font-size: 62.5%;
 }
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
 .header{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1100px;
 }
 .header__nav{
     width: 100%;
@@ -34,7 +46,7 @@ html{
     width: 100px;
     text-align: left;
     max-width: 5ch;
-    line-height: 0.8
+    line-height: 0.8;
 }
 .header__nav-logo p span{
     font-size: 2rem;
@@ -57,6 +69,8 @@ html{
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    max-width: 1100px;
+    padding-top: 20px;
 }
 
 .main__Cuadrado,
@@ -99,6 +113,7 @@ html{
 .main__Circle-form-answer{
     font-size: 1.4rem;
     text-align: center;
+    height: 20px;
 }
 .main__Cuadrado-form-buttons,
 .main__Triangle-form-buttons,
@@ -123,4 +138,30 @@ html{
 .main__Triangle-form-buttons-bt:active,
 .main__Circle-form-buttons-btn:active{
     background-color: rgb(111, 0, 255);
+}
+.footer{
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #eee;
+    height: 72px;
+}
+
+@media screen and (min-width: 700px) {
+    .header__nav-ul{
+        justify-content: right;
+        padding-right: 60px;
+    }
+    .main{
+        flex-direction: row;
+        flex: 1;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        max-width: 800px;
+    }
+    
 }

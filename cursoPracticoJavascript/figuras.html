@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <title>Figuras geometricas| Curso practico de Javascript🔥</title>
     <script src="./figuras.js"></script>
@@ -16,8 +17,7 @@
     <header class="header">
         <nav class="header__nav">
             <div class="header__nav-logo">
-                <p>F<span>🔥</span>s</p>
-                <p>lore</p>
+                <p>F<span>🔥</span>s  lore</p>
             </div>
             <ul class="header__nav-ul">
                 <li class="header__nav-ul-li"><i class='bx bx-info-circle'></i></li>
@@ -25,7 +25,48 @@
             </ul>
         </nav>
     </header>
-    <!-- <h1 class="title">Figuras geometrica</h1> -->
-    
+    <main class="main">
+        <h1 class="main__title">Calculadora de figuras geometricas</h1>
+        <section class="main__Cuadrado">
+            <h2 class="main__Cuadrado-title">Cuadrado</h2>
+            <p class="main__Cuadrado-description">Para calcular el area y perimetro de un cuadrado ingrese el siguiente dato:</p>
+            <form action="" class="main__Cuadrado-form">
+                <input class="main__Cuadrado-form-input" type="number" placeholder="Ingrese un lado del cuadrado">
+                <p class="main__Cuadrado-form-answer"></p>
+                <div class="main__Cuadrado-form-buttons">
+                    <button type="button" onclick="calcularAreaCuadrado()" class="main__Cuadrado-form-buttons-btn">Calcular area</button>
+                    <button type="button" onclick="calcularPerimetroCuadrado()" class="main__Cuadrado-form-buttons-btn">Calcular perimetro</button>
+                </div>
+            </form>
+        </section>
+        <section class="main__Triangle">
+            <h2 class="main__Triangle-title">Triangulo</h2>
+            <p class="main__Triangle-description">Para calcular el area de un triangulo solo ingrese la base y la altura.</p>
+            <p class="main__Triangle-description">Para calcular el perimetro de un triangulo ingrese el tamaño de los lados y la base.</p>
+            <form action="" class="main__Triangle-form">
+                <input class="main__Triangle-form-input" type="number" placeholder="Ingrese el lado A del triangulo">
+                <input class="main__Triangle-form-input" type="number" placeholder="Ingrese el lado B del triangulo">
+                <input class="main__Triangle-form-input" type="number" placeholder="Ingrese la base del triangulo">
+                <input class="main__Triangle-form-input" type="number" placeholder="Ingrese la altura del triangulo">
+                <p class="main__Triangle-form-answer"></p>
+                <div class="main__Triangle-form-buttons">
+                    <button type="button" onclick="calcularAreaTriangle()" class="main__Triangle-form-buttons-btn">Calcular area</button>
+                    <button type="button" onclick="calcularPerimetroTriangle()" class="main__Triangle-form-buttons-btn">Calcular perimetro</button>
+                </div>
+            </form>
+        </section>
+        <section class="main__Circle">
+            <h2 class="main__Circle-title">Circulo</h2>
+            <p class="main__Circle-description">Para calcular el area y perimetro de un circulo ingrese el siguiente dato:</p>
+            <form action="" class="main__Circle-form">
+                <input class="main__Circle-form-input" type="number" placeholder="Ingrese el radio del circulo">
+                <p class="main__Circle-form-answer"></p>
+                <div class="main__Circle-form-buttons">
+                    <button type="button" onclick="calcularAreaCircle()" class="main__Circle-form-buttons-btn">Calcular area</button>
+                    <button type="button" onclick="calcularPerimetroCircle()" class="main__Circle-form-buttons-btn">Calcular perimetro</button>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

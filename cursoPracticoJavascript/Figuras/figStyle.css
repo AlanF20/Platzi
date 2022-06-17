@@ -149,6 +149,7 @@ body{
     margin-top: 40px;
     background-color: #eee;
     height: 72px;
+    font-size: 1.8rem;
 }
 
 @media screen and (min-width: 700px) {
